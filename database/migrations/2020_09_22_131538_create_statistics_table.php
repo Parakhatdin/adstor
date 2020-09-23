@@ -19,7 +19,7 @@ class CreateStatisticsTable extends Migration
             $table->integer('click');
             $table->integer('view');
             $table->date('start_time');
-            $table->foreign('post_id')->references('id')->on('posts');
+            $table->foreign('post_id')->references('id')->on('posts')->onDelete('cascade');
             $table->timestamps();
         });
     }

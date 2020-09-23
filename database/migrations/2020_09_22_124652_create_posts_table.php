@@ -21,7 +21,7 @@ class CreatePostsTable extends Migration
             $table->string('media');
             $table->date('post_time');
             $table->date('published_at');
-            $table->foreign('channel_id')->references('id')->on('channels');
+            $table->foreign('channel_id')->references('id')->on('channels')->onDelete('cascade');
             $table->string('status');
             $table->timestamps();
         });
