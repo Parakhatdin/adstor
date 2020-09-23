@@ -9,7 +9,7 @@ use Illuminate\Notifications\Notification;
 use NotificationChannels\Telegram\TelegramChannel;
 use NotificationChannels\Telegram\TelegramMessage;
 
-class TextPost extends Notification
+class PhotoPost extends Notification
 {
     use Queueable;
 
@@ -40,6 +40,7 @@ class TextPost extends Notification
             // Optional recipient user id.
             ->to($notifiable->telegram_id)
             // Markdown supported.
-            ->content($notifiable->text);
+            ->content($notifiable->text)
+            ->photo($notifiable->media);
     }
 }
