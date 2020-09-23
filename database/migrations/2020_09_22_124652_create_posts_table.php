@@ -15,6 +15,7 @@ class CreatePostsTable extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('channel_id');
             $table->string('title');
             $table->text('text');
             $table->string('media');

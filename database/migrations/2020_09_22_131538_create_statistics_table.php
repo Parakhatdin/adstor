@@ -15,6 +15,7 @@ class CreateStatisticsTable extends Migration
     {
         Schema::create('statistics', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('post_id');
             $table->integer('click');
             $table->integer('view');
             $table->date('start_time');
