@@ -39,8 +39,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05a94bf8-930a-4825-a757-09dd6ea5ca2a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +193,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600834148799</updated>
-      <workItem from="1600834149990" duration="8632000" />
+      <workItem from="1600834149990" duration="11991000" />
     </task>
     <servers />
   </component>
@@ -224,6 +224,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="721" y="38" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1600856217341">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="721" y="38" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1600856217341" />
     <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1600850277547">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -232,9 +236,9 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="170" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1600851661662" />
-    <state x="570" y="193" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1600849861869">
+    <state x="570" y="193" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1600856253484">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="570" y="193" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1600849861869" />
+    <state x="570" y="193" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1600856253484" />
   </component>
 </project>
