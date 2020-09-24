@@ -4,10 +4,22 @@ namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
 use App\Models\Channel;
+use App\Services\API\Interfaces\ChannelService;
 use Illuminate\Http\Request;
 
 class ChannelController extends Controller
 {
+    private $channelService;
+
+    /**
+     * ChannelController constructor.
+     * @param ChannelService $channelService
+     */
+    public function __construct(ChannelService $channelService)
+    {
+        $this->channelService = $channelService;
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -15,7 +27,7 @@ class ChannelController extends Controller
      */
     public function index()
     {
-        //
+        return $this->channelService->index();
     }
 
     /**
@@ -26,7 +38,7 @@ class ChannelController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return $this->channelService->store($request);
     }
 
     /**
@@ -37,7 +49,7 @@ class ChannelController extends Controller
      */
     public function show(Channel $channel)
     {
-        //
+        return $this->channelService->show($channel);
     }
 
     /**
@@ -49,7 +61,7 @@ class ChannelController extends Controller
      */
     public function update(Request $request, Channel $channel)
     {
-        //
+        return $this->channelService->update($request, $channel);
     }
 
     /**
@@ -60,6 +72,6 @@ class ChannelController extends Controller
      */
     public function destroy(Channel $channel)
     {
-        //
+        return $this->destroy($channel);
     }
 }

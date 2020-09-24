@@ -4,10 +4,23 @@ namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
 use App\Models\Statistic;
+use App\Services\API\Interfaces\StatisticService;
 use Illuminate\Http\Request;
 
 class StatisticController extends Controller
 {
+    private $statisticService;
+
+    /**
+     * StatisticController constructor.
+     * @param StatisticService $statisticService
+     */
+    public function __construct(StatisticService $statisticService)
+    {
+        $this->statisticService = $statisticService;
+    }
+
+
     /**
      * Display a listing of the resource.
      *
@@ -15,18 +28,7 @@ class StatisticController extends Controller
      */
     public function index()
     {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
+        return $this->statisticService->index();
     }
 
     /**
@@ -37,29 +39,6 @@ class StatisticController extends Controller
      */
     public function show(Statistic $statistic)
     {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Statistic  $statistic
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Statistic $statistic)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Statistic  $statistic
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Statistic $statistic)
-    {
-        //
+        return $this->statisticService->show($statistic);
     }
 }

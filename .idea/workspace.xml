@@ -39,15 +39,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05a94bf8-930a-4825-a757-09dd6ea5ca2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/ChannelController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/PostController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/PublisherController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/StatisticController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/TelegramService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/API/ChannelService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/API/Interfaces/ChannelService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/API/Interfaces/PostService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/API/Interfaces/PublisherService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/API/Interfaces/StatisticService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/API/PostService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/API/PublisherService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/API/StatisticService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Notifications/PhotoPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Notifications/PhotoPost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Notifications/TextPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Notifications/TextPost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Notifications/VideoPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Notifications/VideoPost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/ChannelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/ChannelController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/PublisherController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/PublisherController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/StatisticController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/StatisticController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,13 +192,17 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Notifications" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="\\wsl$\Ubuntu\home\parakhatdin\projects\adstore\app\Http\Controllers" />
+      <recent name="\\wsl$\Ubuntu\home\parakhatdin\projects\adstore\app\Services\API" />
+      <recent name="\\wsl$\Ubuntu\home\parakhatdin\projects\adstore\app\Services\API\Interfaces" />
       <recent name="\\wsl$\Ubuntu\home\parakhatdin\projects\adstore\app\Notifications" />
     </key>
   </component>
@@ -244,18 +255,26 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="765" y="206" key="#com.intellij.ide.util.MemberChooser" timestamp="1600961780943">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="765" y="206" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1600961780943" />
     <state x="721" y="38" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1600856217341">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="721" y="38" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1600856217341" />
-    <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1600850277547">
+    <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1600963446745">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1600850277547" />
-    <state x="691" y="247" key="NewPhpClassDialog" timestamp="1600918304683">
+    <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1600963446745" />
+    <state x="691" y="247" key="NewPhpClassDialog" timestamp="1600959780708">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="691" y="247" key="NewPhpClassDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1600918304683" />
+    <state x="691" y="247" key="NewPhpClassDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1600959780708" />
+    <state x="794" y="448" key="NewPhpFileDialog" timestamp="1600959757741">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="794" y="448" key="NewPhpFileDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1600959757741" />
     <state x="461" y="170" key="SettingsEditor" timestamp="1600851661662">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

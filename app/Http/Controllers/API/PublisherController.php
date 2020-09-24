@@ -4,10 +4,22 @@ namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
 use App\Models\Publisher;
+use App\Services\API\Interfaces\PublisherService;
 use Illuminate\Http\Request;
 
 class PublisherController extends Controller
 {
+    private $publisherService;
+
+    /**
+     * PublisherController constructor.
+     * @param PublisherService $publisherService
+     */
+    public function __construct(PublisherService $publisherService)
+    {
+        $this->publisherService = $publisherService;
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -15,7 +27,7 @@ class PublisherController extends Controller
      */
     public function index()
     {
-        //
+        return $this->publisherService->index();
     }
 
     /**
@@ -26,7 +38,7 @@ class PublisherController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return $this->publisherService->store($request);
     }
 
     /**
@@ -37,7 +49,7 @@ class PublisherController extends Controller
      */
     public function show(Publisher $publisher)
     {
-        //
+        return $this->publisherService->show($publisher);
     }
 
     /**
@@ -49,7 +61,7 @@ class PublisherController extends Controller
      */
     public function update(Request $request, Publisher $publisher)
     {
-        //
+        return $this->publisherService->update($request, $publisher);
     }
 
     /**
@@ -60,6 +72,6 @@ class PublisherController extends Controller
      */
     public function destroy(Publisher $publisher)
     {
-        //
+        return $this->publisherService->destroy($publisher);
     }
 }
