@@ -7,20 +7,24 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 use NotificationChannels\Telegram\TelegramChannel;
+use NotificationChannels\Telegram\TelegramFile;
 use NotificationChannels\Telegram\TelegramMessage;
 
 class VideoPost extends Notification
 {
     use Queueable;
 
+    // array of datas
+    private $data;
+
     /**
      * Create a new notification instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($data)
     {
-        //
+        $this->data = $data;
     }
 
     /**
@@ -36,11 +40,11 @@ class VideoPost extends Notification
 
     public function toTelegram($notifiable)
     {
-        return TelegramMessage::create()
+        return TelegramFile::create()
             // Optional recipient user id.
-            ->to($notifiable->telegram_id)
+            ->to($notifiable->routes['telegram'])
             // Markdown supported.
-            ->content($notifiable->text)
-            ->video($notifiable->media);
+            ->content($this->data['text'])
+            ->video($this->data['media']);
     }
 }

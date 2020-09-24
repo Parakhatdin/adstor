@@ -39,11 +39,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05a94bf8-930a-4825-a757-09dd6ea5ca2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Notifications/DocumentPost.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Notifications/PhotoPost.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Notifications/VideoPost.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/ChannelController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/PostController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/PublisherController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/StatisticController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/TelegramService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Notifications/PhotoPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Notifications/PhotoPost.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Notifications/TextPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Notifications/TextPost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Notifications/VideoPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Notifications/VideoPost.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,13 +252,17 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1600850277547" />
+    <state x="691" y="247" key="NewPhpClassDialog" timestamp="1600918304683">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="691" y="247" key="NewPhpClassDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1600918304683" />
     <state x="461" y="170" key="SettingsEditor" timestamp="1600851661662">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="170" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1600851661662" />
-    <state x="570" y="193" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1600856253484">
+    <state x="570" y="193" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1600924113145">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="570" y="193" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1600856253484" />
+    <state x="570" y="193" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1600924113145" />
   </component>
 </project>
