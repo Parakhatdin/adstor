@@ -16,7 +16,7 @@ class CreateChannelsTable extends Migration
         Schema::create('channels', function (Blueprint $table) {
             $table->id();
             $table->foreignId('publisher_id');
-            $table->string('telegram_id');
+            $table->string('telegram_id')->unique();
             $table->string('type');
             $table->foreign('publisher_id')->references('id')->on('publishers')->onDelete('cascade');
             $table->string('status')->default('ACTIVE');

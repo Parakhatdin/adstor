@@ -15,8 +15,8 @@ class CreatePublishersTable extends Migration
     {
         Schema::create('publishers', function (Blueprint $table) {
             $table->id();
-            $table->string('bot_token');
-            $table->string('name');
+            $table->string('bot_token')->unique();
+            $table->string('name')->unique();
             $table->string('ext_id');
             $table->string('status')->default('ACTIVE');
             $table->timestamps();
