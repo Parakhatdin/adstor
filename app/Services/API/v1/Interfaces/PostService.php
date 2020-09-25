@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Services\API\Interfaces;
+namespace App\Services\API\v1\Interfaces;
 
 
 use App\Models\Post;

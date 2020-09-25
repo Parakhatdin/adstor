@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\API;
+namespace App\Http\Controllers\API\v1;
 
 use App\Http\Controllers\Controller;
 use App\Models\Channel;
-use App\Services\API\Interfaces\ChannelService;
+use App\Services\API\v1\Interfaces\ChannelService;
 use Illuminate\Http\Request;
 
 class ChannelController extends Controller

@@ -1,16 +1,27 @@
 <?php
 
 
-namespace App\Services\API;
+namespace App\Services\API\v1;
 
 
 use App\Models\Channel;
 use App\Models\Post;
+use App\Repositories\API\v1\Interfaces\ChannelRepository;
 use Illuminate\Http\Request;
-use \App\Services\API\Interfaces\ChannelService as ChannelServiceInterface;
+use \App\Services\API\v1\Interfaces\ChannelService as ChannelServiceInterface;
 
 class ChannelService implements ChannelServiceInterface
 {
+    private $channelRepository;
+
+    /**
+     * ChannelService constructor.
+     */
+    public function __construct(ChannelRepository $channelRepository)
+    {
+        $this->channelRepository = $channelRepository;
+    }
+
     public function index()
     {
         // TODO: Implement index() method.

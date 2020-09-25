@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\API;
+namespace App\Http\Controllers\API\v1;
 
 use App\Http\Controllers\Controller;
 use App\Models\Publisher;
-use App\Services\API\Interfaces\PublisherService;
+use App\Services\API\v1\Interfaces\PublisherService;
 use Illuminate\Http\Request;
 
 class PublisherController extends Controller

@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\API;
+namespace App\Http\Controllers\API\v1;
 
 use App\Http\Controllers\Controller;
 use App\Models\Statistic;
-use App\Services\API\Interfaces\StatisticService;
+use App\Services\API\v1\Interfaces\StatisticService;
 use Illuminate\Http\Request;
 
 class StatisticController extends Controller

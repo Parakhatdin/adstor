@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\API;
+namespace App\Http\Controllers\API\v1;
 
 use App\Http\Controllers\Controller;
 use App\Models\Post;
-use App\Services\API\Interfaces\PostService;
+use App\Services\API\v1\Interfaces\PostService;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
