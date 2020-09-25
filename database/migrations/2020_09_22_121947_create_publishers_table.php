@@ -18,7 +18,7 @@ class CreatePublishersTable extends Migration
             $table->string('bot_token');
             $table->string('name');
             $table->string('ext_id');
-            $table->string('status');
+            $table->string('status')->default('ACTIVE');
             $table->timestamps();
         });
     }

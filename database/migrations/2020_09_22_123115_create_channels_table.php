@@ -19,7 +19,7 @@ class CreateChannelsTable extends Migration
             $table->string('telegram_id');
             $table->string('type');
             $table->foreign('publisher_id')->references('id')->on('publishers')->onDelete('cascade');
-            $table->string('status');
+            $table->string('status')->default('ACTIVE');
             $table->timestamps();
         });
     }

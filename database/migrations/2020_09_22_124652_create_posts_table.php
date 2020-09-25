@@ -22,7 +22,7 @@ class CreatePostsTable extends Migration
             $table->date('post_time');
             $table->date('published_at');
             $table->foreign('channel_id')->references('id')->on('channels')->onDelete('cascade');
-            $table->string('status');
+            $table->string('status')->default('WAITING');
             $table->timestamps();
         });
     }
