@@ -39,30 +39,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05a94bf8-930a-4825-a757-09dd6ea5ca2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Repositories/API/v1/ChannelRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/API/v1/Interfaces/ChannelRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/API/v1/Interfaces/PostRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/API/v1/Interfaces/PublisherRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/API/v1/Interfaces/StatisticRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/API/v1/PostRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/API/v1/PublisherRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/API/v1/StatisticRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/ChannelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/v1/ChannelController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/v1/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/PublisherController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/v1/PublisherController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/StatisticController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/v1/StatisticController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Publisher.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Publisher.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/API/ChannelService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/API/v1/ChannelService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/API/Interfaces/ChannelService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/API/v1/Interfaces/ChannelService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/API/Interfaces/PostService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/API/v1/Interfaces/PostService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/API/Interfaces/PublisherService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/API/v1/Interfaces/PublisherService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/API/Interfaces/StatisticService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/API/v1/Interfaces/StatisticService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/API/PostService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/API/v1/PostService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/API/PublisherService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/API/v1/PublisherService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/API/StatisticService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/API/v1/StatisticService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
