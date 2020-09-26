@@ -4,7 +4,6 @@
 namespace App\Repositories\API\v1\Interfaces;
 
 
-interface PostRepository
+interface PostRepository extends BaseRepository
 {
-
 }

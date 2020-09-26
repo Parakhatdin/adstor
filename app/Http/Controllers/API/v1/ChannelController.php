@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\API\v1;
 
 use App\Http\Controllers\Controller;
-use App\Models\Channel;
 use App\Services\API\v1\Interfaces\ChannelService;
 use Illuminate\Http\Request;
 
@@ -44,34 +43,34 @@ class ChannelController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Channel  $channel
+     * @param $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Channel $channel)
+    public function show($id)
     {
-        return $this->channelService->show($channel);
+        return $this->channelService->show($id);
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Channel  $channel
+     * @param \Illuminate\Http\Request $request
+     * @param $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Channel $channel)
+    public function update(Request $request, $id)
     {
-        return $this->channelService->update($request, $channel);
+        return $this->channelService->update($request, $id);
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Channel  $channel
+     * @param $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Channel $channel)
+    public function destroy($id)
     {
-        return $this->destroy($channel);
+        return $this->destroy($id);
     }
 }

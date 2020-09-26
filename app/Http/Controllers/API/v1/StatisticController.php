@@ -3,9 +3,7 @@
 namespace App\Http\Controllers\API\v1;
 
 use App\Http\Controllers\Controller;
-use App\Models\Statistic;
 use App\Services\API\v1\Interfaces\StatisticService;
-use Illuminate\Http\Request;
 
 class StatisticController extends Controller
 {
@@ -37,8 +35,8 @@ class StatisticController extends Controller
      * @param  \App\Models\Statistic  $statistic
      * @return \Illuminate\Http\Response
      */
-    public function show(Statistic $statistic)
+    public function show($id)
     {
-        return $this->statisticService->show($statistic);
+        return $this->statisticService->show($id);
     }
 }

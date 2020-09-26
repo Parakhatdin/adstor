@@ -3,19 +3,6 @@
 
 namespace App\Services\API\v1\Interfaces;
 
-
-use App\Models\Channel;
-use Illuminate\Http\Request;
-
-interface ChannelService
+interface ChannelService extends BaseService
 {
-    public function index();
-
-    public function store(Request $request);
-
-    public function show(Channel $post);
-
-    public function update(Request $request, Channel $post);
-
-    public function destroy(Channel $post);
 }

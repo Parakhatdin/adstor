@@ -3,8 +3,6 @@
 
 namespace App\Services\API\v1;
 
-
-use App\Models\Publisher;
 use App\Repositories\API\v1\Interfaces\PublisherRepository;
 use Illuminate\Http\Request;
 use App\Services\API\v1\Interfaces\PublisherService as PublisherServiceInterface;
@@ -38,24 +36,50 @@ class PublisherService implements PublisherServiceInterface
         ]);
 
         if ($validator->fails()){
-            return response()->json($validator->errors());
+            return "error";
         }
 
-        return $this->publisherRepository->store($validator->validated());
+        try {
+            return $this->publisherRepository->store($validator->validated());
+        } catch (\PDOException $e) {
+            return response("duplicated");
+        }
     }
 
-    public function show(Publisher $post)
+    public function show($id)
     {
-        // TODO: Implement show() method.
+        $a = $this->publisherRepository->getById($id);
+        if (!$a){
+           return "error";
+        }
+        return $a;
     }
 
-    public function update(Request $request, Publisher $post)
+    public function update(Request $request, $id)
     {
-        // TODO: Implement update() method.
+        $validator = Validator::make($request->all(), [
+            'bot_token' => 'string',
+            'name' => 'string',
+            'ext_id' => 'string'
+        ]);
+
+        if ($validator->fails()) {
+            return "error";
+        }
+
+        try {
+            return $this->publisherRepository->update($validator->validated(), $id);
+        } catch (\Exception $e) {
+            return $e->getMessage();
+        }
     }
 
-    public function destroy(Publisher $post)
+    public function destroy($id)
     {
-        // TODO: Implement destroy() method.
+        try {
+            return $this->publisherRepository->delete($id);
+        } catch (\Exception $e) {
+            return "error";
+        }
     }
 }

@@ -4,9 +4,6 @@
 namespace App\Repositories\API\v1\Interfaces;
 
 
-interface PublisherRepository
+interface PublisherRepository extends BaseRepository
 {
-    public function getAll();
-
-    public function store($validatedData);
 }

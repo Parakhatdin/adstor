@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\API\v1;
 
 use App\Http\Controllers\Controller;
-use App\Models\Publisher;
 use App\Services\API\v1\Interfaces\PublisherService;
 use Illuminate\Http\Request;
 
@@ -44,34 +43,34 @@ class PublisherController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Publisher  $publisher
+     * @param $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Publisher $publisher)
+    public function show($id)
     {
-        return $this->publisherService->show($publisher);
+        return $this->publisherService->show($id);
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Publisher  $publisher
+     * @param \Illuminate\Http\Request $request
+     * @param $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Publisher $publisher)
+    public function update(Request $request, $id)
     {
-        return $this->publisherService->update($request, $publisher);
+        return $this->publisherService->update($request, $id);
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Publisher  $publisher
+     * @param $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Publisher $publisher)
+    public function destroy($id)
     {
-        return $this->publisherService->destroy($publisher);
+        return $this->publisherService->destroy($id);
     }
 }

@@ -8,6 +8,7 @@ use App\Models\Post;
 use App\Repositories\API\v1\Interfaces\PostRepository;
 use Illuminate\Http\Request;
 use \App\Services\API\v1\Interfaces\PostService as PostServiceInterface;
+use Illuminate\Support\Facades\Validator;
 
 class PostService implements PostServiceInterface
 {
@@ -15,6 +16,7 @@ class PostService implements PostServiceInterface
 
     /**
      * PostService constructor.
+     * @param PostRepository $postRepository
      */
     public function __construct(PostRepository $postRepository)
     {
@@ -23,28 +25,69 @@ class PostService implements PostServiceInterface
 
     public function index()
     {
-        // TODO: Implement index() method.
-        return "uraaa !!!!!!!!!!!";
+        return $this->postRepository->getAll();
     }
 
     public function store(Request $request)
     {
-        // TODO: Implement store() method.
+        $validator = Validator::make($request->all(), [
+            'channel_id' => 'required',
+            'title' => 'required',
+            'text' => 'required',
+            'media' => 'required',
+            'post_time' => 'required',
+            'published_at' => 'required',
+        ]);
+
+        if ($validator->fails()){
+            return "error";
+        }
+
+        try {
+            return $this->postRepository->store($validator->validated());
+        } catch (\PDOException $e) {
+            return response("duplicated");
+        }
     }
 
-    public function show(Post $post)
+    public function show($id)
     {
         // TODO: Implement show() method.
-        return $post;
+        $a = $this->postRepository->getById($id);
+        if (!$a){
+            return "error";
+        }
+        return $a;
     }
 
-    public function update(Request $request, Post $post)
+    public function update(Request $request, $id)
     {
-        // TODO: Implement update() method.
+        $validator = Validator::make($request->all(), [
+            'channel_id' => 'integer',
+            'title' => 'string',
+            'text' => 'text',
+            'media' => 'string',
+            'post_time' => 'date',
+            'published_at' => 'date',
+        ]);
+
+        if ($validator->fails()) {
+            return "error";
+        }
+
+        try {
+            return $this->postRepository->update($validator->validated(), $id);
+        } catch (\Exception $e) {
+            return $e->getMessage();
+        }
     }
 
-    public function destroy(Post $post)
+    public function destroy($id)
     {
-        // TODO: Implement destroy() method.
+        try {
+            return $this->postRepository->delete($id);
+        } catch (\Exception $e) {
+            return "error";
+        }
     }
 }

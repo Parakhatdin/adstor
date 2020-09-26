@@ -4,7 +4,6 @@
 namespace App\Repositories\API\v1\Interfaces;
 
 
-interface StatisticRepository
+interface StatisticRepository extends BaseRepository
 {
-
 }
