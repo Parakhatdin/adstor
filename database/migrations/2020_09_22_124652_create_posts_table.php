@@ -15,12 +15,12 @@ class CreatePostsTable extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
+            $table->string('chat_id')->nullable();
             $table->foreignId('channel_id');
-            $table->string('title');
             $table->text('text');
-            $table->string('media');
-            $table->date('post_time');
-            $table->date('published_at');
+            $table->string('url')->nullable();
+            $table->date('post_time')->nullable();
+            $table->enum('media_type', ['TEXT', 'PHOTO', 'VIDEO', 'DOCUMENT']);
             $table->foreign('channel_id')->references('id')->on('channels')->onDelete('cascade');
             $table->string('status')->default('WAITING');
             $table->timestamps();
