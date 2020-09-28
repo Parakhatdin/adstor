@@ -1,10 +1,10 @@
 <?php
 
 
-namespace App\Repositories\API\v1;
+namespace App\Repositories\Api;
 
 use App\Models\Publisher;
-use \App\Repositories\API\v1\Interfaces\PublisherRepository as PublisherRepositoryInterface;
+use App\Repositories\Api\Interfaces\PublisherRepository as PublisherRepositoryInterface;
 
 class PublisherRepository extends BaseRepository implements PublisherRepositoryInterface
 {

@@ -1,9 +1,9 @@
 <?php
 
-use App\Http\Controllers\API\v1\ChannelController;
-use App\Http\Controllers\API\v1\PostController;
-use App\Http\Controllers\API\v1\PublisherController;
-use App\Http\Controllers\API\v1\StatisticController;
+use App\Http\Controllers\Api\v1\ChannelController;
+use App\Http\Controllers\Api\v1\PostController;
+use App\Http\Controllers\Api\v1\PublisherController;
+use App\Http\Controllers\Api\v1\StatisticController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 

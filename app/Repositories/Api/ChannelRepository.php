@@ -1,10 +1,10 @@
 <?php
 
 
-namespace App\Repositories\API\v1;
+namespace App\Repositories\Api;
 
 use App\Models\Channel;
-use App\Repositories\API\v1\Interfaces\ChannelRepository as ChannelRepositoryInterface;
+use App\Repositories\Api\Interfaces\ChannelRepository as ChannelRepositoryInterface;
 class ChannelRepository extends BaseRepository implements ChannelRepositoryInterface
 {
 

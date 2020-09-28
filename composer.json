@@ -15,7 +15,8 @@
         "laravel-notification-channels/telegram": "^0.5.0",
         "laravel/framework": "^8.0",
         "laravel/tinker": "^2.0",
-      "ext-pdo": "*"
+      "ext-pdo": "*",
+      "ext-http": "*"
     },
     "require-dev": {
         "facade/ignition": "^2.3.6",

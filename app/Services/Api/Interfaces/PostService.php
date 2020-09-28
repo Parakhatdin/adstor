@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Services\API\v1\Interfaces;
+namespace App\Services\Api\Interfaces;
 
 interface PostService extends BaseService
 {

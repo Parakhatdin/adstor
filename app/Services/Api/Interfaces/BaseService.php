@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Services\API\v1\Interfaces;
+namespace App\Services\Api\Interfaces;
 
 
 use Illuminate\Http\Request;
@@ -10,11 +10,11 @@ interface BaseService
 {
     public function index();
 
-    public function store(Request $request);
+    public function store($data);
 
     public function show($id);
 
-    public function update(Request $request, $id);
+    public function update($data, $id);
 
     public function destroy($id);
 }

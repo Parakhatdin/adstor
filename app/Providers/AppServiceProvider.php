@@ -2,23 +2,23 @@
 
 namespace App\Providers;
 
-use App\Repositories\API\v1\ChannelRepository;
-use App\Repositories\API\v1\PostRepository;
-use App\Repositories\API\v1\PublisherRepository;
-use App\Repositories\API\v1\StatisticRepository;
-use App\Repositories\API\v1\Interfaces\ChannelRepository as ChannelRepositoryInterface;
-use App\Repositories\API\v1\Interfaces\PostRepository as PostRepositoryInterface;
-use App\Repositories\API\v1\Interfaces\PublisherRepository as PublisherRepositoryInterface;
-use App\Repositories\API\v1\Interfaces\StatisticRepository as StatisticRepositoryInterface;
+use App\Repositories\Api\ChannelRepository;
+use App\Repositories\Api\PostRepository;
+use App\Repositories\Api\PublisherRepository;
+use App\Repositories\Api\StatisticRepository;
+use App\Repositories\Api\Interfaces\ChannelRepository as ChannelRepositoryInterface;
+use App\Repositories\Api\Interfaces\PostRepository as PostRepositoryInterface;
+use App\Repositories\Api\Interfaces\PublisherRepository as PublisherRepositoryInterface;
+use App\Repositories\Api\Interfaces\StatisticRepository as StatisticRepositoryInterface;
 
-use App\Services\API\v1\ChannelService;
-use App\Services\API\v1\PostService;
-use App\Services\API\v1\PublisherService;
-use App\Services\API\v1\StatisticService;
-use App\Services\API\v1\Interfaces\ChannelService as ChannelServiceInterface;
-use App\Services\API\v1\Interfaces\PostService as PostServiceInterface;
-use App\Services\API\v1\Interfaces\PublisherService as PublisherServiceInterface;
-use App\Services\API\v1\Interfaces\StatisticService as StatisticServiceInterface;
+use App\Services\Api\ChannelService;
+use App\Services\Api\PostService;
+use App\Services\Api\PublisherService;
+use App\Services\Api\StatisticService;
+use App\Services\Api\Interfaces\ChannelService as ChannelServiceInterface;
+use App\Services\Api\Interfaces\PostService as PostServiceInterface;
+use App\Services\Api\Interfaces\PublisherService as PublisherServiceInterface;
+use App\Services\Api\Interfaces\StatisticService as StatisticServiceInterface;
 
 use Illuminate\Support\ServiceProvider;
 

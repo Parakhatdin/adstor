@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Repositories\API\v1\Interfaces;
+namespace App\Repositories\Api\Interfaces;
 
 
 interface PublisherRepository extends BaseRepository

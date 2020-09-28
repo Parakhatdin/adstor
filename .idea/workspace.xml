@@ -39,38 +39,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05a94bf8-930a-4825-a757-09dd6ea5ca2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Repositories/API/v1/BaseRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/API/v1/Interfaces/BaseRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/API/v1/Interfaces/BaseService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/Api/BaseService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/v1/ChannelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/v1/ChannelController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/v1/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/v1/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/v1/PublisherController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/v1/PublisherController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/v1/StatisticController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/v1/StatisticController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Channel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Channel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/API/v1/ChannelRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/API/v1/ChannelRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/API/v1/Interfaces/ChannelRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/API/v1/Interfaces/ChannelRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/API/v1/Interfaces/PostRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/API/v1/Interfaces/PostRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/API/v1/Interfaces/PublisherRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/API/v1/Interfaces/PublisherRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/API/v1/Interfaces/StatisticRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/API/v1/Interfaces/StatisticRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/API/v1/PostRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/API/v1/PostRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/API/v1/PublisherRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/API/v1/PublisherRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/API/v1/StatisticRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/API/v1/StatisticRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/API/v1/ChannelService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/API/v1/ChannelService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/API/v1/Interfaces/ChannelService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/API/v1/Interfaces/ChannelService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/API/v1/Interfaces/PostService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/API/v1/Interfaces/PostService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/API/v1/Interfaces/PublisherService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/API/v1/Interfaces/PublisherService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/API/v1/PostService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/API/v1/PostService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/API/v1/PublisherService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/API/v1/PublisherService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/v1/ChannelController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/v1/PostController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/v1/PublisherController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/v1/StatisticController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/API/v1/BaseRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/API/v1/ChannelRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/API/v1/Interfaces/BaseRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/API/v1/Interfaces/ChannelRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/API/v1/Interfaces/PostRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/API/v1/Interfaces/PublisherRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/API/v1/Interfaces/StatisticRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/API/v1/PostRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/API/v1/PublisherRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/API/v1/StatisticRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/API/v1/ChannelService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/API/v1/Interfaces/BaseService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/API/v1/Interfaces/ChannelService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/API/v1/Interfaces/PostService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/API/v1/Interfaces/PublisherService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/API/v1/Interfaces/StatisticService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/API/v1/PostService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/API/v1/PublisherService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/API/v1/StatisticService.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -208,16 +211,18 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="\\wsl$\Ubuntu\home\parakhatdin\projects\adstore\app\Services\API\v1" />
-      <recent name="\\wsl$\Ubuntu\home\parakhatdin\projects\adstore\app\Http\Controllers\API\v1" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="\\wsl$\Ubuntu\home\parakhatdin\projects\adstore\app\Repositories\API\v1\Interfaces" />
       <recent name="\\wsl$\Ubuntu\home\parakhatdin\projects\adstore\app\Http\Controllers" />
       <recent name="\\wsl$\Ubuntu\home\parakhatdin\projects\adstore\app\Services\API" />
       <recent name="\\wsl$\Ubuntu\home\parakhatdin\projects\adstore\app\Services\API\Interfaces" />
       <recent name="\\wsl$\Ubuntu\home\parakhatdin\projects\adstore\app\Notifications" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="\\wsl$\Ubuntu\home\parakhatdin\projects\adstore\app\Repositories\Api" />
+      <recent name="\\wsl$\Ubuntu\home\parakhatdin\projects\adstore\app\Services\Api" />
+      <recent name="\\wsl$\Ubuntu\home\parakhatdin\projects\adstore\app\Services\API\v1" />
+      <recent name="\\wsl$\Ubuntu\home\parakhatdin\projects\adstore\app\Http\Controllers\API\v1" />
     </key>
   </component>
   <component name="RunManager">
@@ -235,6 +240,8 @@
       <option name="presentableId" value="Default" />
       <updated>1600834148799</updated>
       <workItem from="1600834149990" duration="11991000" />
+      <workItem from="1601195123175" duration="5307000" />
+      <workItem from="1601232157589" duration="2311000" />
     </task>
     <servers />
   </component>
@@ -273,30 +280,30 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="586" y="203" key="#Inspections/0.0.1920.1050@0.0.1920.1050" timestamp="1601033565225" />
-    <state x="765" y="206" key="#com.intellij.ide.util.MemberChooser" timestamp="1601107627142">
+    <state x="765" y="206" key="#com.intellij.ide.util.MemberChooser" timestamp="1601231458744">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="765" y="206" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1601107627142" />
+    <state x="765" y="206" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1601231458744" />
     <state x="710" y="314" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1601107184155">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="710" y="314" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1601107184155" />
-    <state x="721" y="38" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1600856217341">
+    <state x="721" y="38" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1601231402002">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="721" y="38" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1600856217341" />
-    <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601106965136">
+    <state x="721" y="38" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1601231402002" />
+    <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601231016011">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1601106965136" />
+    <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1601231016011" />
     <state x="441" y="440" key="ComposerInitDialogKey" timestamp="1601033537145">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="441" y="440" key="ComposerInitDialogKey/0.0.1920.1050@0.0.1920.1050" timestamp="1601033537145" />
-    <state x="691" y="247" key="NewPhpClassDialog" timestamp="1601107185615">
+    <state x="691" y="247" key="NewPhpClassDialog" timestamp="1601231328220">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="691" y="247" key="NewPhpClassDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1601107185615" />
+    <state x="691" y="247" key="NewPhpClassDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1601231328220" />
     <state x="794" y="448" key="NewPhpFileDialog" timestamp="1600959757741">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -309,5 +316,9 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="570" y="193" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1600924113145" />
+    <state x="367" y="233" width="672" height="678" key="search.everywhere.popup" timestamp="1601212787479">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="367" y="233" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601212787479" />
   </component>
 </project>

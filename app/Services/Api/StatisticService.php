@@ -1,14 +1,12 @@
 <?php
 
 
-namespace App\Services\API\v1;
+namespace App\Services\Api;
 
 
-use App\Models\Post;
 use App\Models\Statistic;
-use App\Repositories\API\v1\Interfaces\StatisticRepository;
-use Illuminate\Http\Request;
-use \App\Services\API\v1\Interfaces\StatisticService as StatisticServiceInterface;
+use App\Repositories\Api\Interfaces\StatisticRepository;
+use App\Services\Api\Interfaces\StatisticService as StatisticServiceInterface;
 
 class StatisticService implements StatisticServiceInterface
 {
@@ -16,6 +14,7 @@ class StatisticService implements StatisticServiceInterface
 
     /**
      * StatisticService constructor.
+     * @param StatisticRepository $statisticRepository
      */
     public function __construct(StatisticRepository $statisticRepository)
     {

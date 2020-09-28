@@ -1,10 +1,12 @@
 <?php
 
 
-namespace App\Repositories\API\v1;
+namespace App\Repositories\Api;
 
 use App\Models\Post;
-use App\Repositories\API\v1\Interfaces\PostRepository as PostRepositoryInterface;
+use App\Repositories\Api\Interfaces\PostRepository as PostRepositoryInterface;
+
+
 class PostRepository extends BaseRepository implements PostRepositoryInterface
 {
     /**

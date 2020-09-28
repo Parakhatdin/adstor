@@ -1,9 +1,9 @@
 <?php
 
 
-namespace App\Repositories\API\v1;
+namespace App\Repositories\Api;
 
-use App\Repositories\API\v1\Interfaces\BaseRepository as BaseRepositoryInterface;
+use App\Repositories\Api\Interfaces\BaseRepository as BaseRepositoryInterface;
 class BaseRepository implements BaseRepositoryInterface
 {
     protected $model;

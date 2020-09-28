@@ -1,9 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\API\v1;
+namespace App\Http\Controllers\Api\v1;
 
 use App\Http\Controllers\Controller;
-use App\Services\API\v1\Interfaces\StatisticService;
+use App\Services\Api\Interfaces\StatisticService;
+use Illuminate\Http\Response;
 
 class StatisticController extends Controller
 {
@@ -22,21 +23,21 @@ class StatisticController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function index()
     {
-        return $this->statisticService->index();
+        return response($this->statisticService->index());
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Statistic  $statistic
-     * @return \Illuminate\Http\Response
+     * @param $id
+     * @return Response
      */
     public function show($id)
     {
-        return $this->statisticService->show($id);
+        return response($this->statisticService->show($id));
     }
 }
