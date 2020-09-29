@@ -5,4 +5,5 @@ namespace App\Services\Api\Interfaces;
 
 interface PostService extends BaseService
 {
+    public function send($data);
 }

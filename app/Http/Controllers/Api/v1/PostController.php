@@ -112,15 +112,17 @@ class PostController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'channel_id' => 'required',
-            'title' => 'required',
             'text' => 'required',
+            'url' => 'string',
             'media_type' => 'required',
-            'post_time' => 'required',
+            'post_time' => 'string',
         ]);
 
         if ($validator->fails()){
-            return response("error");
+            return response($validator->errors());
         }
+
+        return response()->json($this->postService->send($validator->validated()));
 
     }
 }

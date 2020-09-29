@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -39,34 +42,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05a94bf8-930a-4825-a757-09dd6ea5ca2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Services/Api/BaseService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/v1/ChannelController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/v1/PostController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/v1/PublisherController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/v1/StatisticController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/API/v1/BaseRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/API/v1/ChannelRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/API/v1/Interfaces/BaseRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/API/v1/Interfaces/ChannelRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/API/v1/Interfaces/PostRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/API/v1/Interfaces/PublisherRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/API/v1/Interfaces/StatisticRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/API/v1/PostRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/API/v1/PublisherRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/API/v1/StatisticRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/API/v1/ChannelService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/API/v1/Interfaces/BaseService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/API/v1/Interfaces/ChannelService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/API/v1/Interfaces/PostService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/API/v1/Interfaces/PublisherService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/API/v1/Interfaces/StatisticService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/API/v1/PostService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/API/v1/PublisherService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/API/v1/StatisticService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/v1/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/v1/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Notifications/DocumentPost.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Notifications/PhotoPost.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Notifications/TextPost.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Notifications/VideoPost.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Api/BaseService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Api/BaseService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Api/Interfaces/PostService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Api/Interfaces/PostService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Api/PostService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Api/PostService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TelegramService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/TelegramService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +190,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Repositories/API/v1/Interfaces" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ad/adstor" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -242,6 +228,9 @@
       <workItem from="1600834149990" duration="11991000" />
       <workItem from="1601195123175" duration="5307000" />
       <workItem from="1601232157589" duration="2311000" />
+      <workItem from="1601386765480" duration="49000" />
+      <workItem from="1601386848231" duration="12636000" />
+      <workItem from="1601403141022" duration="2980000" />
     </task>
     <servers />
   </component>
@@ -300,10 +289,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="441" y="440" key="ComposerInitDialogKey/0.0.1920.1050@0.0.1920.1050" timestamp="1601033537145" />
-    <state x="691" y="247" key="NewPhpClassDialog" timestamp="1601231328220">
+    <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1601388688910">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="691" y="247" key="NewPhpClassDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1601231328220" />
+    <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1601388688910" />
+    <state x="691" y="247" key="NewPhpClassDialog" timestamp="1601396230831">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="691" y="247" key="NewPhpClassDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1601396230831" />
     <state x="794" y="448" key="NewPhpFileDialog" timestamp="1600959757741">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -312,13 +305,17 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="170" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1600851661662" />
-    <state x="570" y="193" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1600924113145">
+    <state x="570" y="193" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1601398760156">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="570" y="193" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1600924113145" />
-    <state x="367" y="233" width="672" height="678" key="search.everywhere.popup" timestamp="1601212787479">
+    <state x="570" y="193" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1601398760156" />
+    <state x="803" y="286" key="refactoring.ChangeSignatureDialog" timestamp="1601391698054">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="367" y="233" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601212787479" />
+    <state x="803" y="286" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1601391698054" />
+    <state x="367" y="233" width="672" height="678" key="search.everywhere.popup" timestamp="1601388368105">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="367" y="233" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601388368105" />
   </component>
 </project>

@@ -22,7 +22,7 @@ class BaseService implements BaseServiceInterface
         try {
             return $this->repository->store($data);
         } catch (PDOException $e) {
-            return "duplicated";
+            return $e->getMessage();
         }
     }
 
