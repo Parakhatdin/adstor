@@ -107,4 +107,20 @@ class PostController extends Controller
     {
         return response($this->postService->destroy($id));
     }
+
+    public function send(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'channel_id' => 'required',
+            'title' => 'required',
+            'text' => 'required',
+            'media_type' => 'required',
+            'post_time' => 'required',
+        ]);
+
+        if ($validator->fails()){
+            return response("error");
+        }
+
+    }
 }

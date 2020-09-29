@@ -19,12 +19,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::prefix('v1')->group(function () {
-    Route::apiResources([
+    /*Route::apiResources([
         'post' => PostController::class,
         'channel' => ChannelController::class,
         'publisher' => PublisherController::class,
-    ]);
-    Route::apiResource('statistic', StatisticController::class)->only(['index', 'show']);
+    ]);*/
+    //Route::apiResource('statistic', StatisticController::class)->only(['index', 'show']);
+    Route::post('/sendPost', [PostController::class, 'send']);
 });
 
 
