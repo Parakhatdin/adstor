@@ -3,29 +3,28 @@
 namespace App\Services;
 
 
-use GuzzleHttp\Client;
-use GuzzleHttp\Exception\GuzzleException;
 
 class RequestService
 {
 
-    private $client;
-
     /**
      * RequestService constructor.
-     * @param Client $client
      */
-    public function __construct(Client $client)
+    public function __construct()
     {
-        $this->client = $client;
     }
 
     public function sendPost($url, $body)
     {
-        try {
-            return $this->client->post($url, ['body' => $body]);
-        } catch (GuzzleException $e) {
-            return "error";
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $body);
+        $result = curl_exec($ch);
+        if(curl_error($ch)){
+            return json_encode(curl_error($ch));
+        } else{
+            return $result;
         }
     }
 

@@ -115,7 +115,7 @@ class PostController extends Controller
             'text' => 'required',
             'url' => 'string',
             'media_type' => 'required',
-            'post_time' => 'string',
+            'post_time' => 'date_format:Y-m-d H:i',
         ]);
 
         if ($validator->fails()){

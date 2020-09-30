@@ -10,7 +10,7 @@ use App\Services\Api\Interfaces\PublisherService;
 
 class TelegramService
 {
-    const T_URL = "https://api.telegram.org/";
+    const T_URL = "https://api.telegram.org/bot";
 
     private $channelService, $publisherService, $requestService;
 
@@ -54,7 +54,7 @@ class TelegramService
 
     public function sendMessage($bot_token, $body)
     {
-        $url = self::T_URL.$bot_token.'sendMessage';
+        $url = self::T_URL.$bot_token.'/sendMessage';
         $this->requestService->sendPost($url, $body);
     }
 

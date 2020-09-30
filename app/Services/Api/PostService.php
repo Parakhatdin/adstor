@@ -25,7 +25,6 @@ class PostService extends BaseService implements PostServiceInterface
     {
         if (!isset($data['post_time'])) {
             SendPost::dispatch($data);
-            return "ok";
         }
         return $this->store($data);
     }
