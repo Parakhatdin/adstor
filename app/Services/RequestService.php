@@ -1,7 +1,7 @@
 <?php
 
-namespace App\Services;
 
+namespace App\Services;
 
 
 class RequestService
@@ -27,5 +27,4 @@ class RequestService
             info($result);
         }
     }
-
 }
