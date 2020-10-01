@@ -30,21 +30,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7b02ffc-6591-4ff7-82be-0c080fa0500f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Console/Commands/CheckPost.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/CheckPost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/v1/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/v1/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/Api/Interfaces/PostRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Api/Interfaces/PostRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/Api/PostRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Api/PostRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/Api/Interfaces/PostService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Api/Interfaces/PostService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/Api/PostService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Api/PostService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/RequestService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/RequestService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/TelegramService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/TelegramService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-    </list>
+    <list default="true" id="c7b02ffc-6591-4ff7-82be-0c080fa0500f" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -199,7 +185,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601445144620</updated>
-      <workItem from="1601445145723" duration="16109000" />
+      <workItem from="1601445145723" duration="16461000" />
     </task>
     <servers />
   </component>
