@@ -17,4 +17,9 @@ class PostRepository extends BaseRepository implements PostRepositoryInterface
     {
         $this->model = $model;
     }
+
+    public function getIfIsPostTime()
+    {
+        return $this->model->where('post_time', '<=', date('Y-m-d H:i:s'))->first();
+    }
 }

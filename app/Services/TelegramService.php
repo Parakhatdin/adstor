@@ -44,7 +44,12 @@ class TelegramService
             ];
             $this->sendMessage($bot_token, $body);
         } elseif ($data['media_type'] == 'PHOTO') {
-            $this->sendPhoto($data);
+            $body = [
+                'chat_id' => $chat_id,
+                'caption' => $data["text"],
+                'photo' => $data['url'],
+            ];
+            $this->sendPhoto($bot_token, $body);
         } elseif ($data['media_type'] == 'VIDEO') {
             $this->sendVideo($data);
         } elseif ($data['media_type'] == 'DOCUMENT') {
@@ -58,9 +63,10 @@ class TelegramService
         $this->requestService->sendPost($url, $body);
     }
 
-    public function sendPhoto($data)
+    public function sendPhoto($bot_token, $body)
     {
-
+        $url = self::T_URL.$bot_token.'/sendPhoto';
+        $this->requestService->sendPost($url, $body);
     }
 
     public function sendVideo($data)

@@ -22,9 +22,9 @@ class RequestService
         curl_setopt($ch, CURLOPT_POSTFIELDS, $body);
         $result = curl_exec($ch);
         if(curl_error($ch)){
-            return json_encode(curl_error($ch));
+            info(curl_error($ch));
         } else{
-            return $result;
+            info($result);
         }
     }
 

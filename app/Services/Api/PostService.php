@@ -29,4 +29,8 @@ class PostService extends BaseService implements PostServiceInterface
         return $this->store($data);
     }
 
+    public function checkDate()
+    {
+        return $this->repository->getIfIsPostTime();
+    }
 }
