@@ -4,6 +4,7 @@
 namespace App\Repositories\Api;
 
 use App\Repositories\Api\Interfaces\BaseRepository as BaseRepositoryInterface;
+
 class BaseRepository implements BaseRepositoryInterface
 {
     protected $model;

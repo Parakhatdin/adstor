@@ -17,4 +17,9 @@ class ChannelService extends BaseService implements ChannelServiceInterface
     {
         $this->repository = $channelRepository;
     }
+
+    public function publisher($id)
+    {
+        return $this->repository->publisher($id);
+    }
 }

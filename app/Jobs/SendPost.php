@@ -13,15 +13,15 @@ class SendPost implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
-    protected $data;
+    protected $model_id;
 
     /**
      * Create a new job instance.
      * @param $data
      */
-    public function __construct($data)
+    public function __construct($model_id)
     {
-        $this->data = $data;
+        $this->model_id = $model_id;
     }
 
     /**
@@ -32,7 +32,7 @@ class SendPost implements ShouldQueue
      */
     public function handle(TelegramService $telegramService)
     {
-        $telegramService->send($this->data);
+        $telegramService->send($this->model_id);
     }
 
 }

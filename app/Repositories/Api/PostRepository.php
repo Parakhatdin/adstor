@@ -20,6 +20,11 @@ class PostRepository extends BaseRepository implements PostRepositoryInterface
 
     public function getIfIsPostTime()
     {
-        return $this->model->where('post_time', '<=', date('Y-m-d H:i:s'))->first();
+        return $this->model->where('status', 'WAITING')->where('post_time', '<=', date('Y-m-d H:i:s'))->first();
+    }
+
+    public function channel($id)
+    {
+        return $this->model->find($id)->channel;
     }
 }

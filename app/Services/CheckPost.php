@@ -24,9 +24,9 @@ class CheckPost
 
     public function check()
     {
-        $post = $this->postService->checkDate();
-        if ($post){
-            SendPost::dispatch($post->toArray());
+        $model = $this->postService->checkDate();
+        if ($model){
+            SendPost::dispatch($model->id);
         }
     }
 }

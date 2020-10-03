@@ -16,4 +16,9 @@ class ChannelRepository extends BaseRepository implements ChannelRepositoryInter
     {
         $this->model = $model;
     }
+
+    public function publisher($id)
+    {
+        return $this->model->find($id)->publisher;
+    }
 }

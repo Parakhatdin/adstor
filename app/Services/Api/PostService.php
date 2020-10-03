@@ -23,14 +23,23 @@ class PostService extends BaseService implements PostServiceInterface
 
     public function send($data)
     {
-        if (!isset($data['post_time'])) {
-            SendPost::dispatch($data);
+        $model =  $this->store($data);
+        if ($model) {
+            if ($model->post_time == null) {
+                SendPost::dispatch($model->id);
+            }
+            return "success";
         }
-        return $this->store($data);
+        return "error";
     }
 
     public function checkDate()
     {
         return $this->repository->getIfIsPostTime();
+    }
+
+    public function channel($id)
+    {
+        return $this->repository->channel($id);
     }
 }

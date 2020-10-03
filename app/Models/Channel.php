@@ -10,4 +10,9 @@ class Channel extends Model
     use HasFactory;
 
     protected $fillable = ['publisher_id', 'telegram_id', 'type'];
+
+    public function publisher()
+    {
+        return $this->belongsTo('App\Models\Publisher');
+    }
 }
